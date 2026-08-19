@@ -1,3 +1,14 @@
 import { Routes } from '@angular/router';
+import { UsuarioComponent } from './pages/usuario/usuario.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: "usuario",
+    component: UsuarioComponent
+  },
+
+  {
+    path: "**",
+    redirectTo: "usuario"
+  }
+];
